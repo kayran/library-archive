@@ -4,14 +4,16 @@ This is a project made in my Front-end Development MBA. It just create a simple 
 
 This is part of Javascript Architecture - AJS-201A course.
 
-This project was generated with REACT
+This project was generated with REACT, using redux, axios and a backend with JSON-SERVER
 
 ## Install
 
-Clone the project and run `npm install`.
+Clone the project. 
+Enter the react-app folder and run `npm install`.
+Enter the backend folder and run `npm install`.
 
 ## Development server
 
-Run `npm run start` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Run `npm start` for a dev server. Navigate to `http://localhost:3000/` (if the project doesn't auto open). The app will automatically reload if you change any of the source files.
 
-Run the server `npm run server` for a json server. The server will automatically reload when data changes.
+Run the server from backend folder with `npm start` for a json server. The server will automatically reload when data changes.
