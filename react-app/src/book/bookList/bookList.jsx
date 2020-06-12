@@ -1,25 +1,34 @@
 import React from 'react';
-import IconButton from '../../components/iconButton';
+import { bindActionCreators } from 'redux';
+import { connect } from 'react-redux'
 
-export default props => {
- 
-    const renderRows = () => {
+import IconButton from '../../components/iconButton/iconButton';
+
+import API from '../../api/books';
+
+const {deleteBook, fetchBookList} = API
+
+const BookList =  props => {
+    const renderRows = (props) => {
         const list = props.list || [];
-        console.log(list)
-        return list.map(book => (
-            <tr>
+        return list.map(book => {
+            const deleteBookItem = async () => {
+                await props.deleteBook(book.id);
+                props.fetchBookList();
+            }
+            return (<tr key={book.id}>
                 <td>{book.name}</td>
                 <td>{book.author}</td>
                 <td>{book.publishingHouse}</td>
                 <td>{book.area}</td>
                 <td>
-                    <IconButton className='success' icon='check'></IconButton>
-                    <IconButton className='warning' icon='undo'></IconButton>
-                    <IconButton className='danger' icon='trash-o'></IconButton>
+                    <IconButton dataId={book.id} className='light' icon='trash-o' click={deleteBookItem}></IconButton>
                 </td>
-            </tr>
-        ))
+            </tr>)        
+        });
+        
     }
+    
     return (
         <table className='table'>
             <thead>
@@ -32,8 +41,13 @@ export default props => {
                 </tr>
             </thead>
             <tbody>
-                {renderRows()}
+                {renderRows(props)}
             </tbody>
         </table>
     )
 }
+
+const mapDispatchToProps = dispatch =>
+  bindActionCreators({deleteBook, fetchBookList}, dispatch);
+
+export default connect(null, mapDispatchToProps) (BookList)

@@ -1,0 +1,10 @@
+.table {
+    color: #003688;
+} 
+.table thead th{    
+    border-top: 0;
+    border-color:#007bff1a;
+} 
+.table td, .table th {
+    border-color:#007bff1a;
+}

@@ -1,7 +1,7 @@
 import React from 'react'
 
 export default props => (
-    <nav className="navbar navbar-expand-lg navbar-light bg-light">
+    <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
         <a className='navbar-brand' href='#/inicio'>
            Biblioteca
         </a>

@@ -1,0 +1,10 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "json-server book.json --port 3001 --routes routes.json"
+  },
+  "author": "",
+  "license": "ISC"
+}

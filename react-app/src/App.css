@@ -1,11 +1,15 @@
+body{
+  color: #003688;
+;
+}
+
 .container {
   display: flex;
   justify-content: center;
   flex-direction: column;
-
 }
 .container > .body{
-  background-color: #ddd;
-  height: 600px;
-  padding: 5px;
+  background-color: #e5f2ff;
+  padding: 10px;
+  box-shadow: 1px 1px 5px black;
 }

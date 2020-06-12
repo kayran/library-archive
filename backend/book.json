@@ -1,0 +1,25 @@
+{
+  "books": [
+    {
+      "name": "1",
+      "author": "1",
+      "publishingHouse": "1",
+      "area": "1",
+      "id": 1
+    },
+    {
+      "name": "2",
+      "author": "2",
+      "publishingHouse": "2",
+      "area": "2",
+      "id": 2
+    },
+    {
+      "name": "3",
+      "author": "3",
+      "publishingHouse": "3",
+      "area": "3",
+      "id": 3
+    }
+  ]
+}

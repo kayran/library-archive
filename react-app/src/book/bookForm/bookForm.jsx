@@ -1,5 +1,5 @@
 import React from 'react'
-import IconButton from '../../components/iconButton'
+import IconButton from '../../components/iconButton/iconButton'
 import Input from '../../components/input/input'
 
 import './bookForm.css'
@@ -35,8 +35,6 @@ export default props => {
             <section className='action-item'>
                 <IconButton className='primary' icon='plus' text='Salvar' click={props.saveBook} state={props.state}></IconButton>
             </section>
-
-
         </section>
     )
 }

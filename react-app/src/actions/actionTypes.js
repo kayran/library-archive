@@ -1,1 +1,4 @@
 export const ADD_BOOK = 'ADD_BOOK';
+export const BOOK_LIST_PENDING = 'BOOK_LIST_PENDING';
+export const BOOK_LIST_SUCCESS = 'BOOK_LIST_SUCCESS';
+export const BOOK_LIST_ERROR = 'BOOK_LIST_ERROR';

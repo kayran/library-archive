@@ -1,8 +1,8 @@
 import React from 'react'
-import PageHeader from '../components/pageHeader'
+import Header from '../components/header/header'
 export default props => (
     <main className='container'>
-        <PageHeader name='Sobre' small='biblioteca'/>
+        <Header name='Sobre' small='biblioteca'/>
         <section className='body'>
             <p>
                 Livros da biblioteca
